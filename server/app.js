@@ -15,7 +15,7 @@ var vote = require('./routes/vote')
 
 var app = express();
 app.use(cors())
-
+// menambahkan mongoDb atlas
 mongoose.connect(`mongodb://jainal:pakuhaji@cluster0-shard-00-00-nlquw.mongodb.net:27017,cluster0-shard-00-01-nlquw.mongodb.net:27017,cluster0-shard-00-02-nlquw.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin`, (err)=>{
   if(!err){
     console.log('Database sudah terhubung')
